@@ -1,0 +1,38 @@
+name: Publicar Instagram
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # a cada 10 minutos (o GitHub pode atrasar alguns minutos)
+  workflow_dispatch:          # botão "Run workflow" para rodar na mão
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar-instagram
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Publicar posts vencidos
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          MIDIA_BASE_URL: ${{ vars.MIDIA_BASE_URL }}
+        run: python ferramentas/publicar.py
+      - name: Salvar estado
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain estado.json)" ]; then
+            git config user.name "tabelapp-bot"
+            git config user.email "tabelapp-bot@users.noreply.github.com"
+            git add estado.json
+            git commit -m "estado: posts publicados"
+            git push
+          fi
