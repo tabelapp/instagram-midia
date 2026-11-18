@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "*/10 * * * *"   # a cada 10 minutos (o GitHub pode atrasar alguns minutos)
   workflow_dispatch:          # botão "Run workflow" para rodar na mão
+    inputs:
+      verificar:
+        description: "Só testar a conexão, sem publicar"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -25,7 +30,7 @@ jobs:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           MIDIA_BASE_URL: ${{ vars.MIDIA_BASE_URL }}
-        run: python ferramentas/publicar.py
+        run: python ferramentas/publicar.py ${{ inputs.verificar && '--verificar' || '' }}
       - name: Salvar estado
         if: always()
         run: |

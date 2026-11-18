@@ -13,6 +13,7 @@ Uso:
   python ferramentas/publicar.py --simular    só mostra o que faria, sem chamar a API
   python ferramentas/publicar.py --agora P07  publica um post específico já, ignorando a data
   python ferramentas/publicar.py --status     lista o estado de todos os posts
+  python ferramentas/publicar.py --verificar  testa o token e a conta, sem publicar
 """
 import json, os, sys, time, urllib.parse, urllib.request, urllib.error
 from datetime import datetime, timedelta, timezone
@@ -31,8 +32,11 @@ def salvar_estado(e):
     ESTADO.write_text(json.dumps(e, ensure_ascii=False, indent=2), encoding="utf-8")
 
 def api(metodo, caminho, params):
-    base = os.environ.get("IG_API_BASE", "https://graph.instagram.com/v25.0").rstrip("/")
-    params = dict(params, access_token=os.environ["IG_ACCESS_TOKEN"])
+    token = os.environ["IG_ACCESS_TOKEN"]
+    # Token do login do Instagram começa com IG; o do login unificado usa o host do Facebook.
+    padrao = "https://graph.instagram.com/v25.0" if token.startswith("IG") else "https://graph.facebook.com/v25.0"
+    base = os.environ.get("IG_API_BASE", padrao).rstrip("/")
+    params = dict(params, access_token=token)
     dados = urllib.parse.urlencode(params).encode()
     url = f"{base}/{caminho}"
     if metodo == "GET":
@@ -116,6 +120,13 @@ def main():
     cal = json.loads(CAL.read_text(encoding="utf-8"))
     estado = carregar_estado()
     agora = datetime.now(timezone.utc)
+
+    if "--verificar" in args:
+        uid = os.environ["IG_USER_ID"]
+        conta = api("GET", uid, {"fields": "username"})
+        limite = api("GET", f"{uid}/content_publishing_limit", {})
+        print(f"Conexão ok com @{conta.get('username')}. Nada foi publicado. Limite de publicação: {limite.get('data')}")
+        return
 
     if "--status" in args:
         for p in cal["posts"]:
