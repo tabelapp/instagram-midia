@@ -1,0 +1,11 @@
+{
+  "pronto": false,
+  "produto": "Café 500 g",
+  "data": "23/11/2026",
+  "precos": [
+    {"mercado": "Mercado A", "preco": null},
+    {"mercado": "Mercado B", "preco": null},
+    {"mercado": "Mercado C", "preco": null},
+    {"mercado": "Mercado D", "preco": null}
+  ]
+}

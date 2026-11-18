@@ -1,0 +1,29 @@
+{
+  "pronto": false,
+  "titulo": "Depois da Black Friday",
+  "subtitulo": "Os mesmos 5 itens, uma semana depois",
+  "bairro": "Petrópolis",
+  "data": "28/11/2026",
+  "produtos": [
+    {"nome": "Arroz 5 kg", "precos": [
+      {"mercado": "Mercado A", "preco": null, "preco_normal": null, "fonte": "NF"},
+      {"mercado": "Mercado B", "preco": null, "preco_normal": null, "fonte": "NF"},
+      {"mercado": "Mercado C", "preco": null, "preco_normal": null, "fonte": "NF"}]},
+    {"nome": "Feijão carioca 1 kg", "precos": [
+      {"mercado": "Mercado A", "preco": null, "preco_normal": null, "fonte": "NF"},
+      {"mercado": "Mercado B", "preco": null, "preco_normal": null, "fonte": "NF"},
+      {"mercado": "Mercado C", "preco": null, "preco_normal": null, "fonte": "NF"}]},
+    {"nome": "Café 500 g", "precos": [
+      {"mercado": "Mercado A", "preco": null, "preco_normal": null, "fonte": "NF"},
+      {"mercado": "Mercado B", "preco": null, "preco_normal": null, "fonte": "NF"},
+      {"mercado": "Mercado C", "preco": null, "preco_normal": null, "fonte": "NF"}]},
+    {"nome": "Óleo de soja 900 ml", "precos": [
+      {"mercado": "Mercado A", "preco": null, "preco_normal": null, "fonte": "NF"},
+      {"mercado": "Mercado B", "preco": null, "preco_normal": null, "fonte": "NF"},
+      {"mercado": "Mercado C", "preco": null, "preco_normal": null, "fonte": "NF"}]},
+    {"nome": "Leite integral 1 L", "precos": [
+      {"mercado": "Mercado A", "preco": null, "preco_normal": null, "fonte": "NF"},
+      {"mercado": "Mercado B", "preco": null, "preco_normal": null, "fonte": "NF"},
+      {"mercado": "Mercado C", "preco": null, "preco_normal": null, "fonte": "NF"}]}
+  ]
+}

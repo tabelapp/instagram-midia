@@ -1,0 +1,29 @@
+{
+  "pronto": false,
+  "titulo": "Cesta da semana",
+  "subtitulo": "5 itens em 3 mercados",
+  "bairro": "Petrópolis",
+  "data": "21/11/2026",
+  "produtos": [
+    {"nome": "Arroz 5 kg", "precos": [
+      {"mercado": "Mercado A", "preco": null, "preco_normal": null, "fonte": "NF"},
+      {"mercado": "Mercado B", "preco": null, "preco_normal": null, "fonte": "NF"},
+      {"mercado": "Mercado C", "preco": null, "preco_normal": null, "fonte": "NF"}]},
+    {"nome": "Feijão carioca 1 kg", "precos": [
+      {"mercado": "Mercado A", "preco": null, "preco_normal": null, "fonte": "NF"},
+      {"mercado": "Mercado B", "preco": null, "preco_normal": null, "fonte": "NF"},
+      {"mercado": "Mercado C", "preco": null, "preco_normal": null, "fonte": "NF"}]},
+    {"nome": "Café 500 g", "precos": [
+      {"mercado": "Mercado A", "preco": null, "preco_normal": null, "fonte": "NF"},
+      {"mercado": "Mercado B", "preco": null, "preco_normal": null, "fonte": "NF"},
+      {"mercado": "Mercado C", "preco": null, "preco_normal": null, "fonte": "NF"}]},
+    {"nome": "Óleo de soja 900 ml", "precos": [
+      {"mercado": "Mercado A", "preco": null, "preco_normal": null, "fonte": "NF"},
+      {"mercado": "Mercado B", "preco": null, "preco_normal": null, "fonte": "NF"},
+      {"mercado": "Mercado C", "preco": null, "preco_normal": null, "fonte": "NF"}]},
+    {"nome": "Leite integral 1 L", "precos": [
+      {"mercado": "Mercado A", "preco": null, "preco_normal": null, "fonte": "NF"},
+      {"mercado": "Mercado B", "preco": null, "preco_normal": null, "fonte": "NF"},
+      {"mercado": "Mercado C", "preco": null, "preco_normal": null, "fonte": "NF"}]}
+  ]
+}
