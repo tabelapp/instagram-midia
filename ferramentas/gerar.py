@@ -280,8 +280,9 @@ def main():
         video(qs, [2.6, 3.0, 2.4, 3.0, 3.0], S("P04-reel-voce-compara/reel.mp4"))
         shutil.copy(qs[0], S("P04-reel-voce-compara/capa.png"))
 
-        # P05 / P11 Comparações (dependem de dados reais)
-        for pid, arq in (("P05-comparacao-1", "comparacao-1.json"), ("P11-comparacao-2", "comparacao-2.json")):
+        # P05 Comparação (depende de dados reais). O P11 (antes e durante a Black Friday)
+        # tem a arte feita fora deste script, no modelo do P05/P06, e copiada para midia/.
+        for pid, arq in (("P05-comparacao-1", "comparacao-1.json"),):
             d = carregar(arq); ok = completo_comparacao(d); destino = MIDIA if ok else PREVIA
             n = len(d["produtos"]) + 2
             r.png(s_capa("amarelo", d["titulo"], d["subtitulo"], f"{d['bairro']} · {d['data']}  →", f"1/{n}", 116, not ok), destino / pid / "01.png")

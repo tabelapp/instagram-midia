@@ -1,29 +1,26 @@
 {
   "pronto": false,
-  "titulo": "Depois da Black Friday",
-  "subtitulo": "Os mesmos 5 itens, uma semana depois",
-  "bairro": "Petrópolis",
-  "data": "28/11/2026",
+  "formato": "Antes e durante a Black Friday: 1 produto por slide, carrossel 1080x1080 no modelo aprovado do P05/P06",
+  "regras": "Preços só do Supabase (somente leitura) ou de encarte real, sem inventar, arredondar ou estimar. 'antes' = preço vigente em 21/11/2026; 'durante' = preço coletado em 26/11/2026. Mostrar a tabela ao Thomaz e esperar o ok antes de gerar a arte. Loja sem preço em uma das datas sai do slide (não preencher com estimativa).",
+  "data_antes": "21/11/2026",
+  "data_durante": "26/11/2026",
   "produtos": [
-    {"nome": "Arroz 5 kg", "precos": [
-      {"mercado": "Mercado A", "preco": null, "preco_normal": null, "fonte": "NF"},
-      {"mercado": "Mercado B", "preco": null, "preco_normal": null, "fonte": "NF"},
-      {"mercado": "Mercado C", "preco": null, "preco_normal": null, "fonte": "NF"}]},
-    {"nome": "Feijão carioca 1 kg", "precos": [
-      {"mercado": "Mercado A", "preco": null, "preco_normal": null, "fonte": "NF"},
-      {"mercado": "Mercado B", "preco": null, "preco_normal": null, "fonte": "NF"},
-      {"mercado": "Mercado C", "preco": null, "preco_normal": null, "fonte": "NF"}]},
-    {"nome": "Café 500 g", "precos": [
-      {"mercado": "Mercado A", "preco": null, "preco_normal": null, "fonte": "NF"},
-      {"mercado": "Mercado B", "preco": null, "preco_normal": null, "fonte": "NF"},
-      {"mercado": "Mercado C", "preco": null, "preco_normal": null, "fonte": "NF"}]},
-    {"nome": "Óleo de soja 900 ml", "precos": [
-      {"mercado": "Mercado A", "preco": null, "preco_normal": null, "fonte": "NF"},
-      {"mercado": "Mercado B", "preco": null, "preco_normal": null, "fonte": "NF"},
-      {"mercado": "Mercado C", "preco": null, "preco_normal": null, "fonte": "NF"}]},
-    {"nome": "Leite integral 1 L", "precos": [
-      {"mercado": "Mercado A", "preco": null, "preco_normal": null, "fonte": "NF"},
-      {"mercado": "Mercado B", "preco": null, "preco_normal": null, "fonte": "NF"},
-      {"mercado": "Mercado C", "preco": null, "preco_normal": null, "fonte": "NF"}]}
+    {"nome": "Linguiça Tipo Calabresa Sadia", "unidade": "kg", "lojas": [
+      {"mercado": "Terê Frutas", "antes": null, "durante": null, "fonte_antes": null, "fonte_durante": null},
+      {"mercado": "Rede Economia", "antes": null, "durante": null, "fonte_antes": null, "fonte_durante": null},
+      {"mercado": "Supermarket", "antes": null, "durante": null, "fonte_antes": null, "fonte_durante": null},
+      {"mercado": "Armazém do Grão", "antes": null, "durante": null, "fonte_antes": null, "fonte_durante": null},
+      {"mercado": "Multimix", "antes": null, "durante": null, "fonte_antes": null, "fonte_durante": null}]},
+    {"nome": "Leite Condensado Piracanjuba 395 g", "unidade": "un", "lojas": [
+      {"mercado": "Terê Frutas", "antes": null, "durante": null, "fonte_antes": null, "fonte_durante": null},
+      {"mercado": "Assaí", "antes": null, "durante": null, "fonte_antes": null, "fonte_durante": null},
+      {"mercado": "Bramil", "antes": null, "durante": null, "fonte_antes": null, "fonte_durante": null},
+      {"mercado": "Super Serra", "antes": null, "durante": null, "fonte_antes": null, "fonte_durante": null},
+      {"mercado": "Petro Frutas", "antes": null, "durante": null, "fonte_antes": null, "fonte_durante": null}]},
+    {"nome": "Café Fort 3 Corações 500 g", "unidade": "pacote", "lojas": [
+      {"mercado": "Armazém do Grão", "antes": null, "durante": null, "fonte_antes": null, "fonte_durante": null},
+      {"mercado": "Terê Frutas", "antes": null, "durante": null, "fonte_antes": null, "fonte_durante": null},
+      {"mercado": "Multimix Centro", "antes": null, "durante": null, "fonte_antes": null, "fonte_durante": null},
+      {"mercado": "Multimix", "antes": null, "durante": null, "fonte_antes": null, "fonte_durante": null}]}
   ]
 }

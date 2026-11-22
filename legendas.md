@@ -123,17 +123,17 @@ Manda pra quem vai às compras hoje 👇
 
 #BlackFriday #Petrópolis #Economia #CapivaraDosPreços #Tabelapp
 
-## P11 · 28/11 12:00 · CAROUSEL · P11-comparacao-2
+## P11 · 28/11 12:00 · CAROUSEL · P11-antes-durante-black-friday
 
-Passou a Black Friday. E os preços? 🔍
+Black Friday em Petrópolis: o preço caiu mesmo? 🔍
 
-Voltamos aos mesmos 5 itens da cesta da semana passada pra ver o que mudou em 3 mercados de Petrópolis.
+Voltamos aos produtos que mostramos na semana passada: linguiça calabresa Sadia, leite condensado Piracanjuba e café Fort 3 Corações. Preço antes (21/11) e durante a Black Friday (26/11), loja por loja. Arrasta pro lado ➡️
 
-Arrasta pro lado e compare. Preços coletados em 28/11. Podem variar.
+Preços de encartes e apps dos mercados, nas datas indicadas em cada arte. Podem mudar sem aviso, confira na loja.
 
 💾 Salve e manda pra quem faz as compras da casa.
 
-#Petrópolis #PetrópolisRJ #Economia #CapivaraDosPreços #Tabelapp
+#BlackFriday #Petrópolis #PetrópolisRJ #Economia #CapivaraDosPreços #Tabelapp
 
 ## P12 · 30/11 18:30 · REELS · P12-reel-bastidores
 
