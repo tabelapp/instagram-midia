@@ -1,7 +1,7 @@
 {
-  "pronto": false,
-  "precos_cadastrados": null,
-  "mercados": null,
-  "notas_fiscais": null,
-  "testadores": null
+  "pronto": true,
+  "precos_cadastrados": 3208,
+  "mercados": 12,
+  "notas_fiscais": 95,
+  "testadores": 8
 }

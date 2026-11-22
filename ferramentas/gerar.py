@@ -350,7 +350,7 @@ def main():
               q_reel("preto", f'<span style="color:{AMARELO};font-size:240px">{n("precos_cadastrados")}</span><br>preços cadastrados', tam=90),
               q_reel("preto", f'<span style="color:{AMARELO};font-size:240px">{n("notas_fiscais")}</span><br>notas fiscais lidas', tam=90),
               q_reel("preto", f'<span style="color:{AMARELO};font-size:240px">{n("mercados")}</span><br>mercados', tam=90),
-              q_reel("preto", f'<span style="color:{AMARELO};font-size:240px">{n("testadores")}</span><br>testadores', tam=90),
+              q_reel("preto", f'<span style="color:{AMARELO};font-size:240px">{n("testadores")}</span><br>pessoas enviando preços', tam=90),
               q_reel("amarelo", "Obrigado a quem está construindo isso com a gente.", logo=True, tam=96)]
         qs = []
         for i, c in enumerate(fr, 1):
