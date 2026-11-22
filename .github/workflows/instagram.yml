@@ -31,13 +31,21 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           MIDIA_BASE_URL: ${{ vars.MIDIA_BASE_URL }}
         run: python ferramentas/publicar.py ${{ inputs.verificar && '--verificar' || '' }}
+      - name: Publicar posts vencidos no Facebook
+        if: always()
+        env:
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          MIDIA_BASE_URL: ${{ vars.MIDIA_BASE_URL }}
+        run: python ferramentas/publicar_facebook.py ${{ inputs.verificar && '--verificar' || '' }}
       - name: Salvar estado
         if: always()
         run: |
-          if [ -n "$(git status --porcelain estado.json)" ]; then
+          if [ -n "$(git status --porcelain estado.json estado-facebook.json)" ]; then
             git config user.name "tabelapp-bot"
             git config user.email "tabelapp-bot@users.noreply.github.com"
             git add estado.json
+            [ -f estado-facebook.json ] && git add estado-facebook.json
             git commit -m "estado: posts publicados"
             git push
           fi
